@@ -1,0 +1,25 @@
+import pandas as pd
+import numpy as np
+
+# making series as a list
+nList = [10, 20, 30, 40, 50]
+nListS = pd.Series(nList, name='panda lab5')
+print(nListS)
+
+# making a series as an array
+nArray = np.array([1, 2, 3, 4, 5])
+nArrayS = pd.Series(nArray, index=list('abcde'))
+print(nArrayS)
+
+# making a series as a dictionary
+nDict = {'a': 100, 'b': 200, 'c': 300, 'd': 400, 'e': 500}
+nDictS = pd.Series(nDict)
+print(nDictS)
+
+# making the index of the series of array into alphabet
+nArrayS.index = list('vwxyz')
+print(nArrayS)
+
+# making the name of the series of the list with panda lab5
+nListS.name = 'panda lab5'
+print(nListS)
