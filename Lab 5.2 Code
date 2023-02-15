@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+
+# making a new series
+new_series = pd.Series([1, 2, 3, 4, 5])
+
+# convert the new series into an array using the .values attribute
+# which returns the given data into a numpy array format
+new_array = new_series.values
+
+# output the new array frome the given series
+print(new_array)
